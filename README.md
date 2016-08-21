@@ -1,26 +1,13 @@
-![alt tag](https://raw.githubusercontent.com/thiagodnf/uecetex2/master/figuras/uecetex2-logo.png)
-
 # O que é?
 
-O **ueceTeX2** é um projeto baseado no [abnTeX2] desenvolvido para auxiliar os alunos da Universidade Estadual do Ceará - UECE em seus trabalhos de monografias de graduação, dissertações de mestrado e teses de doutorado. Embora tenha sido escrita para ser utilizada principalmente pelos alunos da Computação, a ueceTeX2 é suficientemente configurável e facilmente adaptável para ser utilizada em praticamente todos os cursos da UECE. Espera-se que o projeto seja um modelo de trabalho acadêmico que implemente todas as exigências das normas da ABNT sem a necessidade de se preocupar com o estilo ou formatação do documento.
+É um template em LaTeX para escrever trabalhos de conclusão de curso.
 
-### Modelos Disponíveis
-
-**Trabalhos Acadêmicos**
-
- - Trabalho de Conclusão de Curso de Graduação
- - Trabalho de Conclusão de Curso de Especialização
- - Dissertação de Mestrado Acadêmico e Profissional
- - Tese de Doutorado
- 
-**Qualificações**
-
- - Qualificação para Mestrado Acadêmico e Profissional
+Esse projeto foi desenvolvido tomando como base o [**ueceTeX2**](https://github.com/thiagodnf/uecetex2) e seguindo as normas da ABNT. As alterações posteriores tiveram o objetivo de adaptar o template para o modelo de TCC do curso de Ciência da Computação da UFRPE/UAG.
 
 # Por onde começo?
 Para utilizar o ueceTeX2 você precisa seguir os seguintes passos:
 
-1. Clique [aqui](https://github.com/thiagodnf/uecetex2/archive/master.zip) para baixar o projeto
+1. Clique [aqui](https://github.com/ramonsantos/template_tcc/releases/download/v1.0/template_tcc.zip) para baixar o projeto
 2. Descompacte o arquivo no diretório onde vc deseja guardar os arquivos do seu trabalho
 3. Crie o seu texto a partir do arquivo *documento.tex* distribuído no arquivo baixado. O arquivo possui comentários e é, em certa medida, auto-explicativo.
 
@@ -31,32 +18,24 @@ Para utilizar o ueceTeX2 você precisa seguir os seguintes passos:
 Uma vez que todas as informações foram colocadas no documento, você precisará de um programa para compilar e gerar o PDF do seu trabalho.
 
 ### Windows
- - Acesse [https://github.com/thiagodnf/uecetex2/wiki/Como-instalar-no-Windows] 
- 
+ - Acesse [https://github.com/thiagodnf/uecetex2/wiki/Como-instalar-no-Windows]
+
 ### Linux
 
- - Acesse [https://github.com/thiagodnf/uecetex2/wiki/Como-instalar-no-Linux] 
- 
-# Limitações
- 
- O modelo atual possui algumas limitações que podem ser corrigidas ou implementadas em alguma versão futura. São elas:
- 
-  - O modelo permite a participação de somente um co-orientador
-  - A folha de aprovação da Dissertação suporta no máximo 5 pessoas (Orientador, Co-orientador e 3 membros externos)
-  - A folha de aprovação da Tese suporta no máximo 6 pessoas (Orientador, Co-orientador e 4 membros externos)
-  
+ - Acesse [https://github.com/thiagodnf/uecetex2/wiki/Como-instalar-no-Linux]
+
 # Dicas
 Veja a seguir como inserir alguns elementos no seu texto.
 
 ### Como inserir uma Tabela
 ```tex
-\begin{table}[h!]	
+\begin{table}[h!]
 	\centering
 	\Caption{\label{tab:label_da_tabela} Legenda da Tabela}
 	\UECEtab{}{
 		\begin{tabular}{ccll}
 			\toprule
-	    		Quisque & pharetra & tempus & vulputate \\
+				Quisque & pharetra & tempus & vulputate \\
 			\midrule \midrule
 				E1 & Complete coverage & Both splice sites \\
 				E2 & Complete coverage & Both splice sites \\
@@ -74,7 +53,7 @@ Veja a seguir como inserir alguns elementos no seu texto.
 
 ### Como inserir um Quadro
 ```tex
-\begin{quadro}[h!]	
+\begin{quadro}[h!]
 	\centering
 	\Caption{\label{qua:label_do_quadro} Legenda do Quadro}
 	\UECEqua{}{
@@ -97,12 +76,12 @@ Veja a seguir como inserir alguns elementos no seu texto.
 ```tex
 \begin{figure}[h!]
 	\centering
-	\Caption{\label{fig:label_da_figura} Legenda da Figura}	
+	\Caption{\label{fig:label_da_figura} Legenda da Figura}
 	\UECEfig{}{
-	    \includegraphics[width=8cm]{figuras/figura-1}
+		\includegraphics[width=8cm]{figuras/figura-1}
 	}{
-	    \Fonte{Elaborado pelo autor}
-	}	
+		\Fonte{Elaborado pelo autor}
+	}
 \end{figure}
 ```
 
@@ -161,25 +140,17 @@ Veja a seguir como inserir alguns elementos no seu texto.
 			}
 			Aplique Busca Local (Opcional)\;
 			Atualize o Feromônio\;
-		}	
+		}
 	}
 \end{algorithm}
 ```
 
 # Atenção
 
-O ueceTeX2 é fornecido gratuitamente e sem garantias e pode ser redistribuído livremente para fins acadêmicos. O ueceTeX2 é um produto extra-oficial e não está oficialmente vinculada à Universidade Estadual do Ceará - UECE.
+O template é fornecido gratuitamente e sem garantias e pode ser redistribuído livremente para fins acadêmicos. Este é um produto extraoficial e não está oficialmente vinculado à Universidade Federal Rural de Pernambuco -- UFRPE.
 
 # Agradecimentos
 
-![alt tag](http://www.goes.uece.br/style/images/logo_goes.png)
+[Grupo de Otimização em Engenharia de Software -- GOES](http://www.goes.uece.br)
 
-Grupo de Otimização em Engenharia de Software
-
-[http://www.goes.uece.br]
-
-[Por Onde Comecar]:https://code.google.com/p/abntex2/wiki/PorOndeComecar
-[http://www.goes.uece.br]:http://www.goes.uece.br
-[abnTeX2]:https://code.google.com/p/abntex2/
-[http://miktex.org/download]:http://miktex.org/download
-[http://texstudio.sourceforge.net/]:http://texstudio.sourceforge.net/
+[Thiago Nascimento](https://github.com/thiagodnf)
