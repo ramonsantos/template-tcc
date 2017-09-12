@@ -1,5 +1,7 @@
 # O que é?
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e36ac7f794ab4400abc4475c322d941e)](https://www.codacy.com/app/ramonsantos/template_tcc?utm_source=github.com&utm_medium=referral&utm_content=ramonsantos/template_tcc&utm_campaign=badger)
+
 É um template em LaTeX para escrever trabalhos de conclusão de curso.
 
 Esse projeto foi desenvolvido tomando como base o [**ueceTeX2**](https://github.com/thiagodnf/uecetex2) e seguindo as normas da ABNT. As alterações posteriores tiveram o objetivo de adaptar o template para o modelo de TCC do curso de Ciência da Computação da UFRPE/UAG.
